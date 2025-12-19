@@ -5,7 +5,7 @@ RUN apt update -y && apt install --no-install-recommends -y xfce4 xfce4-goodies 
 
 # Setup SSH & Password
 RUN mkdir /var/run/sshd
-RUN echo 'root:rootadmin' | chpasswd
+RUN echo 'root:jojohann25' | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 RUN touch /root/.Xauthority
